@@ -40,3 +40,6 @@ for(f in list.files("logs/")) {
     buildLookup(df, "country", "country") %>%
     arrange(category)
 }
+
+save(lookup.table, file = "data/lookupTable.rda")
+  
